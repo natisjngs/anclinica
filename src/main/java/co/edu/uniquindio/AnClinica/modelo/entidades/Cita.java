@@ -1,4 +1,4 @@
-package co.edu.uniquindio.AnClinica.modelo;
+package co.edu.uniquindio.AnClinica.modelo.entidades;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -24,7 +24,7 @@ public class Cita implements Serializable {
     private LocalDateTime horaF;
 
     @Column(nullable = false, length = 30)
-    private co.edu.uniquindio.AnClinica.modelo.especializacion especializacion;
+    private co.edu.uniquindio.AnClinica.modelo.enums.especializacion especializacion;
 
 
 }

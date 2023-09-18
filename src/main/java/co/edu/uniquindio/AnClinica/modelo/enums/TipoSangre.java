@@ -1,6 +1,4 @@
-package co.edu.uniquindio.AnClinica.modelo;
-
-import jakarta.persistence.ManyToOne;
+package co.edu.uniquindio.AnClinica.modelo.enums;
 
 public enum TipoSangre {
 

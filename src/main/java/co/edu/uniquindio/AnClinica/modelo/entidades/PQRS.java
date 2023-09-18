@@ -1,6 +1,6 @@
-package co.edu.uniquindio.AnClinica.modelo;
+package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-import co.edu.uniquindio.AnClinica.modelo.estadoPqrs;
+import co.edu.uniquindio.AnClinica.modelo.enums.estadoPqrs;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -1,10 +1,9 @@
-package co.edu.uniquindio.AnClinica.modelo;
+package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import jakarta.persistence.*;
 import lombok.*;
 import jakarta.persistence.Column;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Getter

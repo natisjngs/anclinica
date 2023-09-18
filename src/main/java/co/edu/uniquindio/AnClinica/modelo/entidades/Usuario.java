@@ -1,6 +1,6 @@
-package co.edu.uniquindio.AnClinica.modelo;
+package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-import co.edu.uniquindio.AnClinica.modelo.Cuenta;
+import co.edu.uniquindio.AnClinica.modelo.entidades.Cuenta;
 import jakarta.persistence.*;
 import lombok.*;
 import java.io.Serializable;

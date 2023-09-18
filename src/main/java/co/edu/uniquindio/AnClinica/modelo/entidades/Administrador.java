@@ -1,4 +1,4 @@
-package co.edu.uniquindio.AnClinica.modelo;
+package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import jakarta.persistence.Entity;
 import lombok.*;

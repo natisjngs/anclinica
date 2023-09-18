@@ -1,9 +1,4 @@
-package co.edu.uniquindio.AnClinica.modelo;
-
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-
-import java.util.List;
+package co.edu.uniquindio.AnClinica.modelo.enums;
 
 public enum Ciudad {
 
