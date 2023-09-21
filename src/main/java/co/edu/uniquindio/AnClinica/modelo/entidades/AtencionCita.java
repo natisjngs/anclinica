@@ -1,5 +1,6 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
+import co.edu.uniquindio.AnClinica.modelo.enums.Especializacion;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -25,7 +26,7 @@ public class AtencionCita implements Serializable {
     private LocalDateTime fechaAtencion;
 
     @Column(nullable = false, length = 50)
-    private co.edu.uniquindio.AnClinica.modelo.enums.especializacion especializacion;
+    private Especializacion especializacion;
 
     @Lob()
     private String notasMedicas;
@@ -35,8 +36,4 @@ public class AtencionCita implements Serializable {
 
     @Lob()
     private String tratamiento;
-
-
-
-
 }

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-import co.edu.uniquindio.AnClinica.modelo.enums.estadoPqrs;
+import co.edu.uniquindio.AnClinica.modelo.enums.EstadoPQRS;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -31,9 +31,7 @@ public class PQRS implements Serializable {
     private String historialPqrs;
 
     @Column(nullable = false, length = 30)
-    private estadoPqrs estado;
-
-
+    private EstadoPQRS estado;
 
 }
 

@@ -25,5 +25,4 @@ public class Usuario extends Cuenta implements Serializable {
     @Column(nullable = false, length = 40)
     private String email;
 
-
 }

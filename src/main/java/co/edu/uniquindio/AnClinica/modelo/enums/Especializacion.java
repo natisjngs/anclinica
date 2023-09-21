@@ -1,6 +1,6 @@
 package co.edu.uniquindio.AnClinica.modelo.enums;
 
-public enum especializacion {
+public enum Especializacion {
 
 
     GENERAL("General"),
@@ -10,7 +10,7 @@ public enum especializacion {
 
     private final String especializacion;
 
-    especializacion(String especializacion) {
+    Especializacion(String especializacion) {
         this.especializacion = especializacion;
     }
 }

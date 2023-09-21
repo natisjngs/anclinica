@@ -31,9 +31,4 @@ public class Medico extends Usuario implements Serializable {
 
     @Lob
     private String fotoPersonal;
-
-
-
-
-
 }

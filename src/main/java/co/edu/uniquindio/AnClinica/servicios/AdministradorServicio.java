@@ -24,8 +24,8 @@ public interface AdministradorServicio {
 
     List<CitaDTOAdmin> listarCitas() throws Exception;
 
-    void obtenerEstadisticaEspecilaidad();
+    List<EstadisticaDTOEspecialidad> obtenerEstadisticaEspecilaidad() throws Exception;
 
-    void editarEstadoPQRS();
+    String editarEstadoPQRS(InfoPQRSDTO infoPQRSDTO);
 
 }
