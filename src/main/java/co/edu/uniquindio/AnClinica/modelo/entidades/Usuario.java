@@ -1,6 +1,7 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import co.edu.uniquindio.AnClinica.modelo.entidades.Cuenta;
+import co.edu.uniquindio.AnClinica.modelo.enums.Ciudad;
 import jakarta.persistence.*;
 import lombok.*;
 import java.io.Serializable;
@@ -17,13 +18,30 @@ import java.io.Serializable;
 public class Usuario extends Cuenta implements Serializable {
     @Id
     @EqualsAndHashCode.Include
-    private String id_usuario;
+    @Column(nullable = false)
+    private int codigoUsuario;
+
+    @Column(nullable = false, length = 10)
+    private String cedula;
+
+    @Column(nullable = false, length = 60)
+    private String nombre;
+
+    @Column(nullable = false, length = 15)
+    private String telefono;
+
+    @Lob
+    @Column(nullable = false)
+    private String urlFoto;
 
     @Column(nullable = false, length = 30)
     private String password;
 
     @Column(nullable = false, length = 40)
     private String email;
+
+    @Column(nullable = false)
+    private Ciudad ciudad;
 
 
 }

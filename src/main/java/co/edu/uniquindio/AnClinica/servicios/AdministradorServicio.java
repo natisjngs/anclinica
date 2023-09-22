@@ -24,7 +24,7 @@ public interface AdministradorServicio {
 
     List<CitaDTOAdmin> listarCitas() throws Exception;
 
-    void obtenerEstadisticaEspecilaidad();
+    int obtenerEstadisticaEspecilaidad();
 
     void editarEstadoPQRS();
 

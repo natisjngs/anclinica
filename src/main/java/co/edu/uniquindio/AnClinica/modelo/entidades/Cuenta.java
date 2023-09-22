@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import jakarta.persistence.Column;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Getter
@@ -22,8 +23,11 @@ public class Cuenta  implements Serializable {
     @Column(nullable = false, unique = true, length = 80 )
     private String correo;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 20)
     private String password;
+
+    @OneToMany(mappedBy = "cuenta")
+    private List<Mensaje> mensajes;
 
 
 }
