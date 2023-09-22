@@ -37,7 +37,7 @@ public class Cita implements Serializable {
 
     @JoinColumn(nullable = false)
     @OneToOne(mappedBy = "cita")
-    private AtencionCita atencionCita;
+    private AtencionCita a;
 
     @JoinColumn(nullable = false)
     @ManyToOne
