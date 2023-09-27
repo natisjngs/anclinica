@@ -25,7 +25,7 @@ public class Cita implements Serializable {
     private LocalDateTime fechaCita;
 
     @Column(nullable = false, length = 30)
-<<<<<<< HEAD
+
     private String motivo;
 
     @JoinColumn(nullable = false)
@@ -35,9 +35,9 @@ public class Cita implements Serializable {
     @JoinColumn(nullable = false)
     @ManyToOne
     private Medico medico;
-=======
+
     private Especializacion especializacion;
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
+
 
 
 }
