@@ -1,5 +1,6 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,5 +32,8 @@ public class Mensaje implements Serializable {
     @JoinColumn(nullable = false)
     @ManyToOne
     private Cuenta cuenta;
+=======
+public class Mensaje {
+>>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 
 }

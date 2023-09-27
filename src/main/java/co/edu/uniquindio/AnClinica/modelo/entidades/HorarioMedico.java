@@ -1,5 +1,6 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
+<<<<<<< HEAD
 
 import jakarta.persistence.Column;
 import jakarta.persistence.JoinColumn;
@@ -25,4 +26,8 @@ public class HorarioMedico implements Serializable {
 
     @Column(nullable = false)
     private LocalDateTime horaFin;
+=======
+public class HorarioMedico {
+
+>>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 }

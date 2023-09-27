@@ -40,8 +40,11 @@ public class Usuario extends Cuenta implements Serializable {
     @Column(nullable = false, length = 40)
     private String email;
 
+<<<<<<< HEAD
     @Column(nullable = false)
     private Ciudad ciudad;
 
 
+=======
+>>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 }
