@@ -18,6 +18,7 @@ public class Cuenta  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @EqualsAndHashCode.Include
+    @Column(nullable = false)
     private int codigo;
 
     @Column(nullable = false, unique = true, length = 80 )

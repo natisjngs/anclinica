@@ -6,10 +6,8 @@ public enum Ciudad {
     Pereira("Pereira"),
     Manizales("Manizales"),
     Cali("Santiago de Cali"),
-    Bucaramanga("Bucaramanga"),
-    Barranquilla("Barranquilla"),
-    Calarca("Calarcá"),
-    Cartagena("Cartagena");
+    Calarca("Cálarca");
+
     private final String name;
 
     Ciudad(String name) {

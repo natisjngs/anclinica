@@ -16,7 +16,7 @@ public class Cita implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
-    private String codigo;
+    private int codigoCita;
 
     @Column(nullable = false, length = 30)
     private LocalDateTime fechaCreacionCita;
@@ -25,23 +25,17 @@ public class Cita implements Serializable {
     private LocalDateTime fechaCita;
 
     @Column(nullable = false, length = 30)
-    private Especializacion especializacion;
-
-    @JoinColumn(nullable = false)
-    @ManyToOne
-    private Medico medico;
+    private String motivo;
 
     @JoinColumn(nullable = false)
     @ManyToOne
     private Paciente paciente;
 
     @JoinColumn(nullable = false)
-    @OneToOne(mappedBy = "cita")
-    private AtencionCita a;
-
-    @JoinColumn(nullable = false)
     @ManyToOne
-    private PQRS pqrs;
+    private Medico medico;
+
+
 }
 
 

@@ -40,5 +40,8 @@ public class Paciente extends Usuario implements Serializable  {
     @OneToMany(mappedBy = "paciente")
     private List<Cita> listaCitas;
 
+    @OneToMany(mappedBy = "pqrs")
+    private List<Cita> citas;
+
 }
 

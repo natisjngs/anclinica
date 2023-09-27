@@ -1,6 +1,7 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import co.edu.uniquindio.AnClinica.modelo.enums.EstadoPQRS;
+import co.edu.uniquindio.AnClinica.modelo.enums.TipoPQRS;
 import jakarta.persistence.*;
 import lombok.*;
 import java.io.Serializable;
@@ -17,23 +18,22 @@ import java.util.List;
 public class PQRS implements Serializable {
     @Id
     @EqualsAndHashCode.Include
-    private int id_pqrs;
-
-    @Lob
-    @Column(nullable = false)
-    private String detalle;
+    private int id_PQRS;
 
     @Column(nullable = false, length = 30)
     private LocalDateTime fechaCreacion;
 
+    private TipoPQRS tipoPQRS;
+
     @Lob
-    private String historialPqrs;
+    @Column(nullable = false)
+    private String motivo;
 
     @Column(nullable = false, length = 30)
-    private EstadoPQRS estado;
+    private EstadoPQRS estadoPQRS;
 
     @OneToMany(mappedBy = "pqrs")
-    private List<PQRS> pqrsList;
+    private List<PQRS> pqrs;
 
 }
 
