@@ -5,10 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49f3e6dd-14b8-4b16-9ac8-2cc707df931f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/AdministradorRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/AtencionCitaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/CitaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/CuentaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/DiaLibreRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/EstadisticaMedicaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/HorarioMedicoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/MedicoRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/MensajeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/PQRSRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/PacienteRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/Repositorios/UsuarioRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/CuentaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/DetalleMedicoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/UsuarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/DiaLibreServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/EstadisticaMedicaServicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/AdministradorServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/AtencionCitaServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/CitaServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/CuentaServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/DiaLibreServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/EstadisticaMedicaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/ImagenServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/MedicoServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/PQRSServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/PacienteServicioImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/implementacion/UsuarioServicioImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/modelo/entidades/Cita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/modelo/entidades/Cita.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/modelo/entidades/DiaLibre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/modelo/entidades/DiaLibre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/ProyectoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/ProyectoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/EstadisticaDTOEspecialidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/EstadisticaMedicaDTOespecialidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/HorarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/dto/HorarioMedicoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/AdministradorServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/AdministradorServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/AtencionCitaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/AtencionCitaServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/AutenticacionServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/CuentaServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/CitaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/CitaServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/ImagenServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/ImagenServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/MedicoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/MedicoServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/PQRSServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/PQRSServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/PacienteServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/PacienteServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/UsuarioServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/servicios/Interfaces/UsuarioServicio.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +74,9 @@
       <list>
         <option value="Enum" />
         <option value="package-info" />
+        <option value="Class" />
         <option value="Interface" />
         <option value="Record" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,10 +125,10 @@
   <component name="RunManager">
     <configuration name="ProyectoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="AnClinica.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.AnClinica.ProyectoApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="co.edu.uniquindio.AnClinica.servicios.ProyectoApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.edu.uniquindio.AnClinica.*" />
+          <option name="PATTERN" value="co.edu.uniquindio.AnClinica.servicios.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,7 +171,8 @@
       <workItem from="1695654140921" duration="1686000" />
       <workItem from="1695849013874" duration="2981000" />
       <workItem from="1695854405232" duration="418000" />
-      <workItem from="1695854845420" duration="284000" />
+      <workItem from="1695854845420" duration="560000" />
+      <workItem from="1695856476498" duration="4816000" />
     </task>
     <servers />
   </component>

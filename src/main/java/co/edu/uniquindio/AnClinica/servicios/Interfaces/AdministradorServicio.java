@@ -1,4 +1,4 @@
-package co.edu.uniquindio.AnClinica.servicios;
+package co.edu.uniquindio.AnClinica.servicios.Interfaces;
 
 
 import co.edu.uniquindio.AnClinica.dto.*;
@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface AdministradorServicio {
     String crearMedico(MedicoDTO medico) throws Exception;
+
 
     String actualizarMedico(int codigo, MedicoDTO medico) throws Exception;
 
@@ -24,11 +25,9 @@ public interface AdministradorServicio {
 
     List<CitaDTOAdmin> listarCitas() throws Exception;
 
-<<<<<<< HEAD
+
     int obtenerEstadisticaEspecilaidad();
-=======
-    List<EstadisticaDTOEspecialidad> obtenerEstadisticaEspecilaidad() throws Exception;
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
+
 
     String editarEstadoPQRS(InfoPQRSDTO infoPQRSDTO);
 

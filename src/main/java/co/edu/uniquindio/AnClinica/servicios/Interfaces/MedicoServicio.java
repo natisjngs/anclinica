@@ -1,4 +1,4 @@
-package co.edu.uniquindio.AnClinica.servicios;
+package co.edu.uniquindio.AnClinica.servicios.Interfaces;
 
 public interface MedicoServicio {
 
