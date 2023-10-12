@@ -4,7 +4,6 @@ import co.edu.uniquindio.AnClinica.dto.*;
 import co.edu.uniquindio.AnClinica.modelo.entidades.HorarioMedico;
 import co.edu.uniquindio.AnClinica.modelo.entidades.Medico;
 import co.edu.uniquindio.AnClinica.servicios.Interfaces.AdministradorServicio;
-import lombok.Getter;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,18 +20,13 @@ public class AdministradorServicioImpl implements AdministradorServicio {
             medico.setCedula(medicoDTO.cedula());
             medico.setTelefono(medicoDTO.telefono());
             medico.setNombre(medicoDTO.nombre());
-            medico.setTelefono(medicoDTO.telefono());
-            medico.setNombre(medicoDTO.nombre());
-            medico.setEspecializacion(medicoDTO.codigoEspecialidad());
+            medico.setCodigoEspecialidad(medicoDTO.codigoEspecialidad());
             medico.setCiudad(medicoDTO.codigoCiudad());
             medico.setCorreo(medicoDTO.correo());
             medico.setPassword(medicoDTO.password());
             //medico.setUrlFoto(medicoDTO.);
-            //medico.setEstadoCita(medicoDTO.)
+        //medico.setEstado
 
-            //Medico medicoNuevo = medicoRepo.save(medico);
-
-            //asignarHorarioMedico(medicoNuevo, medicoDTO.);
 
         return medicoNuevo.getCodigo;
     }
@@ -40,15 +34,14 @@ public class AdministradorServicioImpl implements AdministradorServicio {
     private void asignarHorarioMedico (Medico medicoNuevo, List<HorarioMedicoDTO> horarioMedicoDTOS);
 
 
-    for ( HorarioMedicoDTO h : horarioMedicoDTOS ){
-
+    for (HorarioMedicoDTO h: horarios){
         HorarioMedico hm = new HorarioMedico();
-        hm.setDia( h.dia() );
-        hm.setHoraInicio(h.horarioInicio());
-        hm.setHoraFin(h.horarioSalida());
-        hm.setMedico(medicoNuevo);
+        hm.setdiaCita (h.dia());
+        hm.setHoraInicio ( h.horarioInicio());
+        hm.setHoraFin ( h.horarioSalida());
+        hm.setMedico( medicoNuevo);
 
-
+        horar
 
     }
     @Override

@@ -2,14 +2,16 @@ package co.edu.uniquindio.AnClinica.modelo.enums;
 
 public enum EstadoCita {
 
-    PROGRAMADA("Programada"),
-    COMPLETADA("Completada"),
-    CANCELADA("Cancelada"),
-    PENDIENTE("Pendiente");
+    PROGRAMADA(001,"Programada"),
+    COMPLETADA(002,"Completada"),
+    CANCELADA(003,"Cancelada"),
+    PENDIENTE(004,"Pendiente");
 
-    private final String nombre;
+    private final int codigo;
+    private final String estadoCita;
 
-    EstadoCita(String nombre) {
-        this.nombre = nombre;
+    EstadoCita(int codigo,String estadoCita) {
+        this.codigo = codigo;
+        this.estadoCita = estadoCita;
     }
 }

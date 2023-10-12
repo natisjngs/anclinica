@@ -22,27 +22,29 @@ import java.util.List;
 public class PQRS implements Serializable {
     @Id
     @EqualsAndHashCode.Include
-    private int id_PQRS;
+    @Column(nullable = false)
+    private int codigo;
 
     @Column(nullable = false, length = 30)
     private LocalDateTime fechaCreacion;
 
+    @Column(nullable = false)
     private TipoPQRS tipoPQRS;
 
     @Lob
     @Column(nullable = false)
     private String motivo;
 
-    @Column(nullable = false, length = 30)
-    private EstadoPQRS estadoPQRS;
+    @ManyToOne
+    private Cita codigoCita;
 
-    @OneToMany(mappedBy = "pqrs")
+    @Column(nullable = false, length = 30)
+    private EstadoPQRS codigoEstadoPQRS;
+
+    @OneToMany(mappedBy = "codigoPQRS")
     private List<Mensaje> mensajes;
 
-    private EstadoPQRS estado;
 
-    @ManyToOne
-    private Cita cita;
 }
 
 

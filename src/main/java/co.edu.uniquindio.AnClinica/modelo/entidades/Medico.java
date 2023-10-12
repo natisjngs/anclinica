@@ -1,32 +1,40 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-import co.edu.uniquindio.AnClinica.modelo.enums.Especializacion;
+import co.edu.uniquindio.AnClinica.modelo.enums.Especialidad;
 import jakarta.persistence.*;
 import lombok.*;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
+@DiscriminatorValue("medico")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Medico extends Usuario implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
+    @Column(nullable = false)
+    private int codigo;
 
     @Column(nullable = false)
-    private int codigoMedico;
+    private Especialidad codigoEspecialidad;
+
+    @OneToMany(mappedBy = "codigoMedico")
+    private List<Cita> citas;
 
     @Column(nullable = false)
-    private Especializacion especializacion;
+    private LocalDateTime horaInicio;
 
-    @OneToMany(mappedBy = "medico")
-    private List<Cita> Citas;
+    @Column(nullable = false)
+    private LocalDateTime horaFin;
 
-    @JoinColumn(nullable = false)
-    @OneToMany(mappedBy = "medico")
+    @OneToMany(mappedBy = "codigoMedico")
     private List<DiaLibre> diaLibres;
+
+    @OneToMany(mappedBy = "codigoMedico")
+    private List<HorarioMedico> horarioMedicos;
 }

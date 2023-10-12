@@ -16,5 +16,7 @@ public class Administrador extends Cuenta implements Serializable  {
     @Id
     @EqualsAndHashCode.Include
     @NotNull
-    private int codigoAdm;
+    private int codigo;
+
+
 }

@@ -1,9 +1,7 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
-import co.edu.uniquindio.AnClinica.modelo.enums.Especializacion;
 import co.edu.uniquindio.AnClinica.modelo.enums.EstadoCita;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -18,7 +16,8 @@ public class Cita implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
-    private int codigoCita;
+    @Column(nullable = false)
+    private int codigo;
 
     @Column(nullable = false, length = 30)
     private LocalDateTime fechaCreacionCita;
@@ -27,23 +26,25 @@ public class Cita implements Serializable {
     private LocalDateTime fechaCita;
 
     @Column(nullable = false, length = 30)
-
     private String motivo;
 
     @JoinColumn(nullable = false)
     @ManyToOne
-    private Paciente paciente;
+    private Paciente cedulaPaciente;
 
     @JoinColumn(nullable = false)
     @ManyToOne
-    private Medico medico;
+    private Medico codigoMedico;
 
     @JoinColumn(nullable = false)
-    @OneToMany(mappedBy = "Cita")
+    private EstadoCita codigoEstado;
+
+    @JoinColumn(nullable = false)
+    @OneToMany(mappedBy = "codigoCita")
     private List<PQRS> pqrs;
 
     @JoinColumn(nullable = false)
-    @OneToOne(mappedBy = "cita")
+    @OneToOne(mappedBy = "codigoCita")
     private AtencionCita atencionCita;
 
     @JoinColumn(nullable = false)

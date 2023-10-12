@@ -2,11 +2,8 @@ package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.util.List;
-
 @Entity
 @Getter
 @Setter
@@ -16,7 +13,8 @@ import java.util.List;
 public class Mensaje implements Serializable {
     @Id
     @EqualsAndHashCode.Include
-    private int codigoMensaje;
+    @Column(nullable = false)
+    private int codigo;
 
     @Column(nullable = false)
     private LocalDateTime fechaCreacion;
@@ -27,10 +25,13 @@ public class Mensaje implements Serializable {
 
     @JoinColumn(nullable = false)
     @ManyToOne
-    private PQRS pqrs;
+    private PQRS codigoPQRS;
 
     @JoinColumn(nullable = false)
     @ManyToOne
-    private Cuenta cuenta;
+    private Cuenta codigoCuenta;
+
+    @OneToOne
+    private Mensaje codigoMensaje;
 
 }
