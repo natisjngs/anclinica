@@ -1,17 +1,17 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-<<<<<<< HEAD
-
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import lombok.EqualsAndHashCode;
+import jakarta.persistence.*;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class HorarioMedico implements Serializable {
     @Id
     @EqualsAndHashCode.Include
@@ -26,8 +26,7 @@ public class HorarioMedico implements Serializable {
 
     @Column(nullable = false)
     private LocalDateTime horaFin;
-=======
-public class HorarioMedico {
 
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
+    @ManyToOne
+    private Medico medico;
 }
