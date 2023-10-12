@@ -1,8 +1,10 @@
 package co.edu.uniquindio.AnClinica.servicios.implementacion;
 
 import co.edu.uniquindio.AnClinica.dto.*;
+import co.edu.uniquindio.AnClinica.modelo.entidades.HorarioMedico;
 import co.edu.uniquindio.AnClinica.modelo.entidades.Medico;
 import co.edu.uniquindio.AnClinica.servicios.Interfaces.AdministradorServicio;
+import lombok.Getter;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,16 +21,36 @@ public class AdministradorServicioImpl implements AdministradorServicio {
             medico.setCedula(medicoDTO.cedula());
             medico.setTelefono(medicoDTO.telefono());
             medico.setNombre(medicoDTO.nombre());
+            medico.setTelefono(medicoDTO.telefono());
+            medico.setNombre(medicoDTO.nombre());
+            medico.setEspecializacion(medicoDTO.codigoEspecialidad());
+            medico.setCiudad(medicoDTO.codigoCiudad());
+            medico.setCorreo(medicoDTO.correo());
+            medico.setPassword(medicoDTO.password());
+            //medico.setUrlFoto(medicoDTO.);
+            //medico.setEstadoCita(medicoDTO.)
 
+            //Medico medicoNuevo = medicoRepo.save(medico);
 
+            //asignarHorarioMedico(medicoNuevo, medicoDTO.);
 
-
-           // Medico medicoNuevo= medicoRepo.save(medico);
-
-
-        return null;
+        return medicoNuevo.getCodigo;
     }
 
+    private void asignarHorarioMedico (Medico medicoNuevo, List<HorarioMedicoDTO> horarioMedicoDTOS);
+
+
+    for ( HorarioMedicoDTO h : horarioMedicoDTOS ){
+
+        HorarioMedico hm = new HorarioMedico();
+        hm.setDia( h.dia() );
+        hm.setHoraInicio(h.horarioInicio());
+        hm.setHoraFin(h.horarioSalida());
+        hm.setMedico(medicoNuevo);
+
+
+
+    }
     @Override
     public String actualizarMedico(int codigo, MedicoDTO medico) throws Exception {
         return null;
@@ -86,4 +108,5 @@ public class AdministradorServicioImpl implements AdministradorServicio {
     public String editarEstadoPQRS(InfoPQRSDTO infoPQRSDTO) {
         return null;
     }
+
 }

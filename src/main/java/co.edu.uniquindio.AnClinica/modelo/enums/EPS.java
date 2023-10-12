@@ -8,7 +8,6 @@ public enum EPS {
     COOMEVA("COOMEVA");
 
     private final String nombre;
-
     EPS(String nombre) {
         this.nombre = nombre;
     }

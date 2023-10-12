@@ -7,7 +7,6 @@ public enum Alergias {
     POLIPOSIS_NASAL("Poliposis Nasal"),
     RINITIS("Rinitis"),
     URTICARIA("Urticaria");
-
     private final String nombre;
     Alergias(String nombre) {
         this.nombre = nombre;

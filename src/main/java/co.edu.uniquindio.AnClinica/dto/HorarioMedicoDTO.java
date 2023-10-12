@@ -4,5 +4,7 @@ public record HorarioMedicoDTO(
         String dia,
         String horarioInicio,
         String horarioSalida
+
+
 ) {
 }

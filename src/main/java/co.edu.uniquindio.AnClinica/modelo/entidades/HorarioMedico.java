@@ -10,7 +10,12 @@ import org.springframework.data.annotation.Id;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class HorarioMedico implements Serializable {
     @Id
     @EqualsAndHashCode.Include

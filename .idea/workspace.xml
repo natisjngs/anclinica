@@ -58,13 +58,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/co/edu/uniquindio/AnClinica/cita.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/co.edu.uniquindio.AnClinica/servicios/implementacion/AdministradorServicioImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2UXMovEDckKD7xffCMRie7SDs5C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2WJzFhKShbSWSU5921aQ1usdyHc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -133,8 +133,8 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="49f3e6dd-14b8-4b16-9ac8-2cc707df931f" name="Changes" comment="" />
-      <created>1693081657859</created>
+      <changelist id="8bd26c4a-2f04-40b3-940a-7a3499008c47" name="Changes" comment="" />
+      <created>1696465374122</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693081657859</updated>
@@ -172,15 +172,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/co.edu.uniquindio.AnClinica/modelo/entidades/Cita.java</url>
+          <line>18</line>
+          <properties field="codigoCita" class="co.edu.uniquindio.AnClinica.modelo.entidades.Cita" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
