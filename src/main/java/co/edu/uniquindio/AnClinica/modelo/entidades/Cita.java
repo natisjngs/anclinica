@@ -1,10 +1,12 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 import co.edu.uniquindio.AnClinica.modelo.enums.Especializacion;
+import co.edu.uniquindio.AnClinica.modelo.enums.EstadoCita;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
@@ -36,10 +38,16 @@ public class Cita implements Serializable {
     @ManyToOne
     private Medico medico;
 
-    private Especializacion especializacion;
+    @JoinColumn(nullable = false)
+    @OneToMany(mappedBy = "Cita")
+    private List<PQRS> pqrs;
 
+    @JoinColumn(nullable = false)
+    @OneToOne(mappedBy = "cita")
+    private AtencionCita atencionCita;
 
-
+    @JoinColumn(nullable = false)
+    private EstadoCita estadoCita;
 }
 
 

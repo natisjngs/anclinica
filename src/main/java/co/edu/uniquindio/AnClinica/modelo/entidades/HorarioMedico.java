@@ -1,6 +1,5 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-<<<<<<< HEAD
 
 import jakarta.persistence.Column;
 import jakarta.persistence.JoinColumn;
@@ -19,15 +18,14 @@ public class HorarioMedico implements Serializable {
     private int codigo;
 
     @Column(nullable = false)
-    private String dia; // Se puede utilizar LocalDateTime, consultar a Rojo
+    private String dia;
 
     @Column(nullable = false)
     private LocalDateTime horaInicio;
 
     @Column(nullable = false)
     private LocalDateTime horaFin;
-=======
-public class HorarioMedico {
 
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
+    @ManyToOne
+    private Medico medico;
 }

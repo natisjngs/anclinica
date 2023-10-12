@@ -1,14 +1,15 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
 import co.edu.uniquindio.AnClinica.modelo.enums.Especializacion;
-<<<<<<< HEAD
+
 import jakarta.persistence.*;
-=======
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
+import jakarta.persistence.Lob;
+
 import lombok.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -33,20 +34,18 @@ public class AtencionCita implements Serializable {
     @Column(nullable = false, length = 50)
     private Especializacion especializacion;
 
+    @JoinColumn(nullable = false)
     @Lob()
     private String notasMedicas;
 
-    @Lob()
+    @JoinColumn(nullable = false)    @Lob()
     private String diagnostico;
 
+    @JoinColumn(nullable = false)
     @Lob()
     private String tratamiento;
-<<<<<<< HEAD
 
-    @OneToOne
+    @JoinColumn(nullable = false)
+    @OneToOne(mappedBy = "atencionCita")
     private Cita cita;
-
-
-=======
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 }
