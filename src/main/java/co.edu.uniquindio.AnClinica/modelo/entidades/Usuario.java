@@ -19,7 +19,7 @@ public class Usuario extends Cuenta implements Serializable {
     @Id
     @EqualsAndHashCode.Include
     @Column(nullable = false)
-    private int codigoUsuario;
+    private int codigo;
 
     @Column(nullable = false, length = 10)
     private String cedula;
@@ -34,17 +34,7 @@ public class Usuario extends Cuenta implements Serializable {
     @Column(nullable = false)
     private String urlFoto;
 
-    @Column(nullable = false, length = 30)
-    private String password;
-
-    @Column(nullable = false, length = 40)
-    private String email;
-
-<<<<<<< HEAD
     @Column(nullable = false)
-    private Ciudad ciudad;
+    private Ciudad codigoCiudad;
 
-
-=======
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 }

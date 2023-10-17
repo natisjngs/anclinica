@@ -1,11 +1,16 @@
 package co.edu.uniquindio.AnClinica.modelo.entidades;
 
-import jakarta.persistence.*;
-import lombok.*;
-import org.springframework.data.annotation.Id;
 
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import lombok.*;
+import jakarta.persistence.Id;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -19,7 +24,7 @@ public class HorarioMedico implements Serializable {
     private int codigo;
 
     @Column(nullable = false)
-    private String dia; // Se puede utilizar LocalDateTime, consultar a Rojo
+    private LocalDate diaCita;
 
     @Column(nullable = false)
     private LocalDateTime horaInicio;
@@ -28,5 +33,5 @@ public class HorarioMedico implements Serializable {
     private LocalDateTime horaFin;
 
     @ManyToOne
-    private Medico medico;
+    private Medico codigoMedico;
 }

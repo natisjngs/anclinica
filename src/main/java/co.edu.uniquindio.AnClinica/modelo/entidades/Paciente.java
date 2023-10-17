@@ -3,44 +3,36 @@ package co.edu.uniquindio.AnClinica.modelo.entidades;
 import co.edu.uniquindio.AnClinica.modelo.enums.Alergias;
 import co.edu.uniquindio.AnClinica.modelo.enums.EPS;
 import co.edu.uniquindio.AnClinica.modelo.enums.TipoSangre;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.*;
-import jakarta.persistence.Column;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
-
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Paciente extends Usuario implements Serializable  {
 
     @Id
     @EqualsAndHashCode.Include
     @Column(nullable = false)
-    private int codigoPaciente;
+    private int codigo;
+
+    @Column(nullable = false)
+    private LocalDate fechaNacimiento;
 
     private Alergias alergias;
 
-    @Column(nullable = false)
-    private EPS eps;
+    @JoinColumn(nullable = false)
+    private EPS codigoEPS;
 
-    @Column(nullable = false)
-    private TipoSangre tipoSangre;
+    @JoinColumn(nullable = false)
+    private TipoSangre codigoTipoSangre;
 
-    @Column(nullable = false)
-    private LocalDateTime fechaNacimiento;
-
-    @OneToMany(mappedBy = "paciente")
-    private List<Cita> listaCitas;
-
-    @OneToMany(mappedBy = "pqrs")
+    @OneToMany(mappedBy = "cedulaPaciente")
     private List<Cita> citas;
 
 }
