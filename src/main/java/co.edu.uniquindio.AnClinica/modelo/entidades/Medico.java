@@ -17,7 +17,6 @@ public class Medico extends Usuario implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
-<<<<<<< HEAD
     @Column(nullable = false)
     private int codigoMedico;
 
@@ -27,7 +26,6 @@ public class Medico extends Usuario implements Serializable {
     @OneToMany(mappedBy = "medico")
     private List<Cita> listaCitas;
 
-=======
     private String cedula;
 
     @Column(nullable = false, length = 50)
@@ -44,5 +42,4 @@ public class Medico extends Usuario implements Serializable {
 
     @Lob
     private String fotoPersonal;
->>>>>>> cba32989848c48c9269c6a34f509e09c38545a43
 }
